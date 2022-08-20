@@ -1,6 +1,6 @@
 /* Global Styles */
 main {
-    padding-top: 85px;
+    padding-top: 75px;
 }
 
 h2 {
@@ -89,8 +89,8 @@ ul.navbar-nav {
 }
 
 .logo {
-    width: 60px !important;
-    height: 60px !important;
+    width: 50px !important;
+    height: 50px !important;
 }
 
 a.nav-link {
