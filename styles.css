@@ -162,7 +162,7 @@ a.nav-link {
 
 /* Background Intro */
 section.intro-bkg {
-    background-image: url(./assets/img/study.jpg);
+    background-image: url(./assets/images/study.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
@@ -338,20 +338,20 @@ a.underline::after {
     
 }
 
-@media (min-width: 1px) and (max-width: 400px) {
+@media (min-width: 1px) and (max-width: 600px) {
 
     /* Background Intro */
     section.intro-bkg {
-        height: 50vh;
+        height: 30vh;
     }
 }
 
 
 
-@media (min-width: 400px) and (max-width: 1080px) {
+@media (min-width: 600px) and (max-width: 1080px) {
 
     /* Background Intro */
     section.intro-bkg {
-        height: 75vh;
+        height: 60vh;
     }
 }
