@@ -259,6 +259,10 @@ footer {
     color: #333;
     margin-top: 15px;
 }
+.google-map {
+    width: 400px; 
+    height: 200px;
+}
 
 /* PAGE EL INSTRUCTOR */
 .instructor-img {
@@ -297,7 +301,6 @@ a.underline::after {
         height: 25vh;
     }
 
-
     /* El Instructor */
     img.syl-img {
         margin-top: 40px;
@@ -312,6 +315,12 @@ a.underline::after {
 
     .organismo-row {
         flex-direction: column-reverse;
+    }
+
+    /* Footer */
+    .google-map {
+        width: 300px; 
+        height: 200px;
     }
 
 }
