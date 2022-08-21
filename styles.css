@@ -162,18 +162,18 @@ a.nav-link {
 
 /* Background Intro */
 section.intro-bkg {
-    background-image: url(./assets/images/study.jpg);
+    background-image: url(./assets/images/couverture.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 60vh;
     background-position: center;
 }
 
 h1.title {
     font-family: 'Lato', sans-serif;
-    font-size: 48px;
+    font-size: 38px;
     color: #333333;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h2.subtitle {
@@ -184,11 +184,20 @@ h2.subtitle {
     text-transform: uppercase;
 }
 
+p.intro {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #858585;
+    font-style: italic;
+}
+
 /* Certifications */
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
+    background-color: #F2F2F2;
 }
 
 img.cards {
@@ -199,7 +208,7 @@ img.cards {
 
 /* El Instructor */
 .section-container {
-    padding: 75px 100px;
+    padding: 150px 100px;
 }
 
 img.syl-img {
@@ -219,6 +228,36 @@ img.organismo {
 
 .item {
     width: 50%;
+}
+
+/* Footer */
+footer {
+    border-top: solid 2px #333;
+}
+
+.footer-container {
+    padding: 50px 100px;
+}
+
+.footer-col {
+    padding-right: 50px !important;
+}
+
+.title-footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700 !important;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.footer-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700 !important;
+    color: #333;
+    margin-top: 15px;
 }
 
 /* PAGE EL INSTRUCTOR */
@@ -251,7 +290,31 @@ a.underline::after {
     transition: transform 0.5s ease-out;
     z-index: -1;
 } */
+@media (max-width: 767px) {
 
+    /* Background Intro */
+    section.intro-bkg {
+        height: 25vh;
+    }
+
+
+    /* El Instructor */
+    img.syl-img {
+        margin-top: 40px;
+        box-shadow: 10px 10px 0px 0px #d9d9d9;
+    }
+
+    /* El Organismo */
+    img.organismo {
+        margin-top: 50px;
+        box-shadow: -10px -10px 0px 0px #d9d9d9;
+    }
+
+    .organismo-row {
+        flex-direction: column-reverse;
+    }
+
+}
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
@@ -286,13 +349,23 @@ a.underline::after {
         border-bottom: solid !important;
         border-width: 1px !important;
     }
+    /* Footer */
+    .footer-col {
+        padding-right: 0;
+        margin-top: 25px !important;
+    }
+
 
     /* Intro */
     h1.title {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     h2.subtitle {
+        font-size: 18px;
+    }
+
+    p.intro {
         font-size: 18px;
     }
 
@@ -301,12 +374,6 @@ a.underline::after {
     }
 
     /* Certifications */
-    .cards-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-        padding: 0 15px !important;
-    }
-
     img.cards {
         margin: auto;
     }
@@ -315,40 +382,23 @@ a.underline::after {
         padding: 75px 25px;
     }
 
-    /* El Instructor */
-    img.syl-img {
-        margin-top: 30px;
-        box-shadow: 10px 10px 0px 0px #d9d9d9;
-    }
-
-    /* El Organismo */
-    img.organismo {
-        margin-bottom: 30px;
-        box-shadow: -10px -10px 0px 0px #d9d9d9;
-    }
-
     /* Page El Instructor */
     .instructor-img {
         box-shadow: -10px -10px 0px 0px #d9d9d9;
         width: 100%;
     }
+
     .title-instructor {
         margin-top: 10px;
     }
-    
-}
-
-@media (min-width: 1px) and (max-width: 600px) {
-
-    /* Background Intro */
-    section.intro-bkg {
-        height: 30vh;
+    /* Footer */
+    .footer-container {
+        padding: 75px 25px;
     }
+
 }
 
-
-
-@media (min-width: 600px) and (max-width: 1080px) {
+@media (min-width: 767px) and (max-width: 1200px) {
 
     /* Background Intro */
     section.intro-bkg {
