@@ -1,0 +1,519 @@
+/* Bootstrap Resets */
+.dropdown-item:focus {
+    background-color: transparent !important;
+}
+
+/* Global Styles */
+main {
+    padding-top: 75px;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    color: #333333;
+    font-weight: 500 !important;
+
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+a {
+    font-family: 'Lato', sans-serif !important;
+    color: #333333 !important;
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Wsp Button */
+.floating-wsp:hover {
+    opacity: 1;
+}
+
+.floating-wsp {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 120;
+    transition: all 0.6s cubic-bezier(0.68, 0.01, 0.22, 0.99);
+}
+
+/*Sub Menu Animation*/
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+@media (min-width: 200px) {
+    .animate {
+        animation-duration: 0.3s;
+        -webkit-animation-duration: 0.3s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+
+/*Sub Menu Animation ends*/
+
+/* Header */
+nav.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+ul.navbar-nav {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    color: #000;
+}
+
+.dropdown-menu {
+    top: 4rem !important;
+    border-radius: 0 !important;
+}
+
+.logo {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+a.nav-link {
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item {
+    padding: 5px 5px !important;
+    border-bottom: solid !important;
+    border-width: 1px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 10%) rotate(-45deg);
+}
+
+
+
+/* Remove Hamburguer Bootstrap Border Focus */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Background Intro */
+section.intro-bkg {
+    background-image: url(./assets/images/couverture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-position: center;
+}
+
+h1.title {
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+    color: #333333;
+    font-weight: 500;
+}
+
+h2.subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #858585;
+    text-transform: uppercase;
+}
+
+p.intro {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #858585;
+    font-style: italic;
+}
+
+/* Certifications */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    background-color: #F2F2F2;
+}
+
+img.cards {
+    width: 250px;
+    height: 130px;
+    border: solid 3px #ebebeb;
+}
+
+/* El Instructor */
+.section-container {
+    padding: 150px 100px;
+}
+
+img.syl-img {
+    width: 100%;
+    height: auto;
+    box-shadow: 15px 15px 0px 3px #D9D9D9;
+}
+
+/* El Organismo */
+img.organismo {
+    width: 100%;
+    height: auto;
+    box-shadow: -15px -15px 0px 3px #d9d9d9;
+}
+
+/* Section Gallery */
+
+.item {
+    width: 50%;
+}
+
+/* Section Contacto */
+
+h2.subtitle-contact {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #858585;
+}
+
+li.contact a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+
+.form-control:focus {
+    border-color: #333333;
+    box-shadow: 0 0 0 0.2rem rgba(133, 133, 133, 0.3) !important;
+}
+
+div.row-contact {
+    align-items: flex-start;
+}
+
+.form-control {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+button.form-btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    border-top: solid 2px #333;
+}
+
+.footer-container {
+    padding: 50px 100px;
+}
+
+.footer-col {
+    padding-right: 50px !important;
+}
+
+.title-footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700 !important;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700 !important;
+    color: #333;
+    margin-top: 15px;
+}
+
+.google-map {
+    width: 400px;
+    height: 200px;
+}
+
+.fa-brands,
+.fa-solid {
+    padding-right: 15px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+i.instagram:hover {
+    color: #e1306c;
+}
+
+i.facebook:hover {
+    color: #3b5998;
+}
+
+i.linkedin:hover {
+    color: #0077b5;
+}
+
+i.youtube:hover {
+    color: #bb0000;
+}
+
+h2.social {
+    margin-top: 50px;
+}
+
+/* PAGE EL INSTRUCTOR */
+.instructor-img {
+    box-shadow: -15px -15px 0px 3px #d9d9d9;
+    width: 100%;
+}
+
+/* a.underline {
+	display: inline-block;
+	position: relative;
+}
+a.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    z-index: 999999;
+}
+
+a.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 234, 208, 0.3);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+    z-index: -1;
+} */
+@media (max-width: 768px) {
+
+    /* Background Intro */
+    section.intro-bkg {
+        height: 25vh;
+    }
+
+    /* El Instructor */
+    img.syl-img {
+        margin-top: 40px;
+        box-shadow: 10px 10px 0px 0px #d9d9d9;
+    }
+
+    /* El Organismo */
+    img.organismo {
+        margin-top: 50px;
+        box-shadow: -10px -10px 0px 0px #d9d9d9;
+    }
+
+    .organismo-row {
+        flex-direction: column-reverse;
+    }
+
+    /* Section Contacto */
+    div.col-12.col-md-7.col-form {
+        padding-top: 50px !important;
+    }
+
+    /* Footer */
+    .google-map {
+        width: 300px;
+        height: 200px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    nav.navbar {
+        background: #FFFFFF;
+        box-shadow: 2px -1px 10px rgba(0, 0, 0, 0.25);
+        padding: 15px 100px
+    }
+
+    .dropdown-item {
+        padding: 5px 25px !important;
+        border: none !important;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .container-fluid {
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+    }
+    .logo {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .dropdown-menu {
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+    .dropdown-item {
+        border-bottom: solid !important;
+        border-width: 1px !important;
+    }
+
+    /* Footer */
+    .footer-col {
+        padding-right: 0;
+        margin-top: 50px !important;
+    }
+
+
+    /* Intro */
+    h1.title {
+        font-size: 24px;
+    }
+
+    h2.subtitle {
+        font-size: 18px;
+    }
+
+    p.intro {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Certifications */
+    img.cards {
+        margin: auto;
+    }
+
+    .section-container {
+        padding: 75px 25px;
+    }
+
+    /* Page El Instructor */
+    .instructor-img {
+        box-shadow: -10px -10px 0px 0px #d9d9d9;
+        width: 100%;
+    }
+
+    .title-instructor {
+        margin-top: 10px;
+    }
+
+    /* Footer */
+    .footer-container {
+        padding: 25px 25px;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+
+    /* Background Intro */
+    section.intro-bkg {
+        height: 40vh;
+    }
+}
