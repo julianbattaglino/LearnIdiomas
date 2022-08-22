@@ -1,0 +1,29 @@
+{
+  "name": "learn-idiomas-web",
+  "version": "1.0.0",
+  "description": "Organismo de formación Learn Idiomas",
+  "main": "scripts.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/styles.scss styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianbattaglino/LearnIdiomas.git"
+  },
+  "keywords": [
+    "Idiomas",
+    "web",
+    "Learning"
+  ],
+  "author": "Julian Battaglino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianbattaglino/LearnIdiomas/issues"
+  },
+  "homepage": "https://github.com/julianbattaglino/LearnIdiomas#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
