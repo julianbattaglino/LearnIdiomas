@@ -441,6 +441,10 @@ a.underline::after {
 }
 
 @media (max-width: 991px) {
+    .container-fluid {
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+    }
     .logo {
         width: 50px !important;
         height: 50px !important;
