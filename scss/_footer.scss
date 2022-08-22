@@ -1,0 +1,94 @@
+/* Section Contacto */
+h2.subtitle-contact {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #858585;
+}
+
+li.contact a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+
+.form-control:focus {
+    border-color: #333333;
+    box-shadow: 0 0 0 0.2rem rgba(133, 133, 133, 0.3) !important;
+}
+
+div.row-contact {
+    align-items: flex-start;
+}
+
+.form-control {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+button.form-btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    border-top: solid 2px #333;
+}
+
+.footer-container {
+    padding: 50px 100px;
+}
+
+.footer-col {
+    padding-right: 50px !important;
+}
+
+.title-footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700 !important;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700 !important;
+    color: #333;
+    margin-top: 15px;
+}
+
+.google-map {
+    width: 400px;
+    height: 200px;
+}
+
+.fa-brands,
+.fa-solid {
+    padding-right: 15px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+i.instagram:hover {
+    color: #e1306c;
+}
+
+i.facebook:hover {
+    color: #3b5998;
+}
+
+i.linkedin:hover {
+    color: #0077b5;
+}
+
+i.youtube:hover {
+    color: #bb0000;
+}
+
+h2.social {
+    margin-top: 50px;
+}

@@ -1,0 +1,12 @@
+/* Dropdown menu transparent background */
+.dropdown-item:focus {
+    background-color: transparent !important;
+}
+/* Remove Hamburguer Bootstrap Border Focus */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
