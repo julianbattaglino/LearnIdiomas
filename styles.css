@@ -16,6 +16,31 @@ p {
     font-size: 16px;
     color: #333333;
 }
+a {
+    font-family: 'Lato', sans-serif !important;
+    color: #333333 !important;
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Wsp Button */
+.floating-wsp:hover {
+    opacity: 1;
+}
+
+.floating-wsp {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 120;
+    transition: all 0.6s cubic-bezier(0.68, 0.01, 0.22, 0.99);
+}
 
 /*Sub Menu Animation*/
 @keyframes slideIn {
@@ -249,7 +274,7 @@ footer {
     font-weight: 700 !important;
     color: #333;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .footer-text {
@@ -263,13 +288,31 @@ footer {
     width: 400px; 
     height: 200px;
 }
-
+.fa-brands, .fa-solid {
+    padding-right: 15px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+i.instagram:hover {
+    color: #e1306c;
+}
+i.facebook:hover {
+    color: #3b5998;
+}
+i.linkedin:hover {
+    color: #0077b5;
+}
+i.youtube:hover {
+    color: #bb0000;
+}
+h2.social {
+    margin-top: 50px;
+}
 /* PAGE EL INSTRUCTOR */
 .instructor-img {
     box-shadow: -15px -15px 0px 3px #d9d9d9;
     width: 100%;
 }
-
 
 /* a.underline {
 	display: inline-block;
@@ -361,7 +404,7 @@ a.underline::after {
     /* Footer */
     .footer-col {
         padding-right: 0;
-        margin-top: 25px !important;
+        margin-top: 50px !important;
     }
 
 
