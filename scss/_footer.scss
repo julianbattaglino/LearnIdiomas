@@ -9,11 +9,11 @@ h2.subtitle-contact {
 li.contact a {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    color: #333333;
+    color: $text-black;
 }
 
 .form-control:focus {
-    border-color: #333333;
+    border-color: $text-black;
     box-shadow: 0 0 0 0.2rem rgba(133, 133, 133, 0.3) !important;
 }
 
@@ -33,7 +33,7 @@ button.form-btn {
 
 /* Footer */
 footer {
-    border-top: solid 2px #333;
+    border-top: solid 2px $text-black;
 }
 
 .footer-container {
@@ -48,7 +48,7 @@ footer {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 700 !important;
-    color: #333;
+    color: $text-black;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -57,7 +57,7 @@ footer {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
     font-weight: 700 !important;
-    color: #333;
+    color: $text-black;
     margin-top: 15px;
 }
 
