@@ -1,4 +1,8 @@
 /* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     padding-top: 75px;
 }
@@ -8,6 +12,7 @@ h2 {
     font-size: 48px;
     color: $text-black;
     font-weight: 500 !important;
+    text-transform: uppercase;
 
 }
 
