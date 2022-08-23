@@ -158,7 +158,11 @@ h1.title {
   font-size: 2rem;
   color: #333;
   font-weight: 500;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-style: italic; }
+
+h2.title {
+  font-style: italic; }
 
 h2.subtitle {
   font-family: 'Lato', sans-serif;
@@ -204,12 +208,6 @@ img.organismo {
 /* Aditional Info*/
 .aditional-info-title {
   background-color: #f2f2f2; }
-
-.aditional-info-text {
-  font-family: 'Lato', sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  color: #858585; }
 
 /* PAGE EL INSTRUCTOR */
 .instructor-img {
@@ -310,6 +308,10 @@ h2.social {
   /* Section Contacto */
   div.col-12.col-md-7.col-form {
     padding-top: 50px !important; }
+  /* Section Aditional Info */
+  h2.title {
+    font-size: 22px;
+    font-style: italic; }
   /* Footer */
   .google-map {
     width: 300px;
@@ -338,7 +340,7 @@ h2.social {
   h2.subtitle {
     font-size: 18px; }
   p.intro {
-    font-size: 18px; }
+    font-size: 14px; }
   p {
     font-size: 14px; }
   /* Certifications */
