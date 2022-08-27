@@ -57,6 +57,8 @@ ul.navbar-nav {
 .dropdown-menu {
     top: 4rem !important;
     border-radius: 0 !important;
+    animation: slideIn 0.3s ease-in-out;
+
 }
 
 .logo {
