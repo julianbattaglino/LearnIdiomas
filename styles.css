@@ -284,7 +284,7 @@ img.organismo {
 
 @media (max-width: 991.98px) {
   img.icon-intro {
-    width: 150px; } }
+    width: 100px; } }
 
 /* PAGE EL INSTRUCTOR */
 .instructor-img {
@@ -333,11 +333,14 @@ p.organisme-text {
   h2.title-organisme {
     font-size: 24px; }
   p.organisme-text {
-    padding-right: 0 !important; }
+    margin-right: 0 !important;
+    padding: 15px 0; }
   .margin-top {
     margin-top: 30px !important; }
   .card-body {
-    margin-top: 125px; } }
+    margin-bottom: 75px; }
+  .card-icon {
+    width: 50px; } }
 
 @media (min-width: 767px) and (max-width: 1200px) {
   /* Background Intro */
