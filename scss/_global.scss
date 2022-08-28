@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 25px;
 }
 
 main {
@@ -29,7 +30,7 @@ a {
     font-family: 'Lato', sans-serif !important;
     color: $text-black !important;
     text-decoration: none !important;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 li {

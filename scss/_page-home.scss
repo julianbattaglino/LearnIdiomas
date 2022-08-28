@@ -9,7 +9,12 @@ section.intro-bkg {
 img.icon-intro {
     width: 150px;
     margin-bottom: 15px;
+    transition: .2s ease-in-out transform !important;
 }
+img.icon-intro:hover {
+    transform: scale(1.1) !important;
+}
+
 
 h1.title {
     font-family: 'Lato', sans-serif;

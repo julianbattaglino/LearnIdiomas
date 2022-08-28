@@ -71,6 +71,19 @@ a.nav-link {
     transition: all 0.3s ease-in-out;
 }
 
+a.nav-link.underline {
+    font-weight: 500 !important;
+  }
+  a.nav-link.dropdown-toggle {
+    font-weight: 500 !important;
+  }
+  a#active.nav-link.underline {
+    font-weight: 900 !important;
+    color: #333 !important;
+    text-decoration: underline !important;
+  }
+  
+
 .dropdown-item {
     padding: 5px 5px !important;
     border-bottom: solid !important;

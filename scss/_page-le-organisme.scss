@@ -30,35 +30,42 @@ p.organisme-text {
 }
 
 .cards-container {
-    background-color: rgb(242,242,242);
+    background-color: rgb(242, 242, 242);
 }
 
 .card-icon {
     width: 75px;
+    margin-bottom: 25px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
     section.organismo-bkg {
         background-image: url(./assets/images/Photo_classe_1.jpg);
         background-size: cover;
         height: 35vh;
         background-attachment: unset;
     }
+
     h2.title-organisme {
         font-size: 24px;
     }
+
     p.organisme-text {
         margin-right: 0 !important;
         padding: 15px 0;
     }
+
     .margin-top {
         margin-top: 30px !important;
     }
+
     .card-body {
         margin-bottom: 75px;
     }
+
     .card-icon {
-        width: 75px;
+        width: 50px;
+        margin-bottom: 15px;
     }
 }
 
@@ -69,6 +76,7 @@ p.organisme-text {
         height: 60vh;
         background-attachment: unset;
     }
+
     h2.title-organisme {
         font-size: 36px;
     }

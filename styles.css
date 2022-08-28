@@ -4,7 +4,8 @@
   margin-right: 0 !important; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  scroll-padding-top: 25px; }
 
 main {
   padding-top: 75px; }
@@ -24,7 +25,7 @@ a {
   font-family: 'Lato', sans-serif !important;
   color: #333 !important;
   text-decoration: none !important;
-  font-weight: 600; }
+  font-weight: 500; }
 
 li {
   list-style-type: none; }
@@ -172,6 +173,17 @@ a.nav-link {
   margin: 0 5px;
   transition: all 0.3s ease-in-out; }
 
+a.nav-link.underline {
+  font-weight: 500 !important; }
+
+a.nav-link.dropdown-toggle {
+  font-weight: 500 !important; }
+
+a#active.nav-link.underline {
+  font-weight: 900 !important;
+  color: #333 !important;
+  text-decoration: underline !important; }
+
 .dropdown-item {
   padding: 5px 5px !important;
   border-bottom: solid !important;
@@ -224,7 +236,11 @@ section.intro-bkg {
 
 img.icon-intro {
   width: 150px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  transition: .2s ease-in-out transform !important; }
+
+img.icon-intro:hover {
+  transform: scale(1.1) !important; }
 
 h1.title {
   font-family: 'Lato', sans-serif;
@@ -322,7 +338,8 @@ p.organisme-text {
   background-color: #f2f2f2; }
 
 .card-icon {
-  width: 75px; }
+  width: 75px;
+  margin-bottom: 25px; }
 
 @media (max-width: 767px) {
   section.organismo-bkg {
@@ -340,7 +357,8 @@ p.organisme-text {
   .card-body {
     margin-bottom: 75px; }
   .card-icon {
-    width: 75px; } }
+    width: 50px;
+    margin-bottom: 15px; } }
 
 @media (min-width: 767px) and (max-width: 1200px) {
   /* Background Intro */
