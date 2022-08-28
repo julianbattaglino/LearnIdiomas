@@ -10,13 +10,14 @@ section.organismo-bkg {
 
 h2.title-organisme {
     font-family: 'Lato', sans-serif;
-    font-size: 64px;
+    font-size: 36px;
     color: $text-black;
     font-weight: 500 !important;
+    text-transform: uppercase;
 }
 
 span.highlighted {
-    font-weight: 700;
+    font-weight: 900;
     color: #333333;
 }
 
@@ -28,6 +29,15 @@ p.organisme-text {
     margin-block-end: 0 !important;
 }
 
+.cards-container {
+    background-color: rgb(242,242,242);
+}
+
+.card-icon {
+    width: 75px;
+
+}
+
 @media (max-width: 767px){
     section.organismo-bkg {
         background-image: url(./assets/images/Photo_classe_1.jpg);
@@ -36,13 +46,16 @@ p.organisme-text {
         background-attachment: unset;
     }
     h2.title-organisme {
-        font-size: 36px;
+        font-size: 24px;
     }
     p.organisme-text {
         padding-right: 0 !important;
     }
     .margin-top {
         margin-top: 30px !important;
+    }
+    .card-body {
+        margin-top: 125px;
     }
 }
 
@@ -54,6 +67,6 @@ p.organisme-text {
         background-attachment: unset;
     }
     h2.title-organisme {
-        font-size: 48px;
+        font-size: 36px;
     }
 }
