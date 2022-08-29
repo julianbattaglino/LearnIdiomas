@@ -3,6 +3,7 @@
     box-shadow: -15px -15px 0px 3px #d9d9d9;
     width: 100%;
 }
+
 span.flags {
     margin-right: 20px;
 }
@@ -12,6 +13,10 @@ span.small-text {
 }
 
 .section-experience {
+    background-color: rgb(242, 242, 242);
+}
+
+.section-certifications {
     padding-top: 0 !important;
 }
 
@@ -19,31 +24,64 @@ span.small-text {
     width: 50px;
     margin-right: 20px;
 }
+
 .languaje-text {
     padding-top: 50px;
 }
+
 h2.languaje-title {
     font-size: 32px;
+}
+
+/* Slick Sliders */
+div.slick-slider.slick-initialized.slick-dotted {
+    width: 80vw;
+    margin: auto;
+}
+.slick-slider {
+    margin-top: 50px !important;
+}
+
+
+.slider-item img {
+    max-width: 60%;
+}
+
+span.lb-number {
+    display: none !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #000000 !important;
 }
 
 @media (max-width: 767px) {
     .instructor-row {
         flex-direction: column-reverse !important;
     }
+
     .instructor-img {
         margin-top: 50px;
+    }
+
+    .slider-item img {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 991px) {
+
     /* Page El Instructor */
     .instructor-img {
         box-shadow: -10px -10px 0px 0px #d9d9d9;
         width: 100%;
     }
+
     .title-instructor {
         margin-top: 10px;
     }
+
     h2.languaje-title {
         font-size: 22px;
     }

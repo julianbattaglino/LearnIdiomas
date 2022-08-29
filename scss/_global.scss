@@ -142,6 +142,11 @@ li {
   transition: all 0.6s cubic-bezier(0.68, 0.01, 0.22, 0.99);
 }
 
+/* Lightbox2 */
+#lightbox-container-image-box {
+  width: 100%; //use 100% of even 90% , see what works for you
+}
+
 @media (max-width: 767px) {
   .row>* {
     padding-left: 0 !important;
