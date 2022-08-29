@@ -22,6 +22,9 @@ span.small-text {
 .languaje-text {
     padding-top: 50px;
 }
+h2.languaje-title {
+    font-size: 32px;
+}
 
 @media (max-width: 767px) {
     .instructor-row {
@@ -40,5 +43,8 @@ span.small-text {
     }
     .title-instructor {
         margin-top: 10px;
+    }
+    h2.languaje-title {
+        font-size: 22px;
     }
 }
