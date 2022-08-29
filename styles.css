@@ -108,6 +108,10 @@ li {
   z-index: 120;
   transition: all 0.6s cubic-bezier(0.68, 0.01, 0.22, 0.99); }
 
+@media (max-width: 767px) {
+  .row > * {
+    padding-left: 0 !important; } }
+
 /* Dropdown menu transparent background */
 .dropdown-item:focus {
   background-color: transparent !important; }
@@ -234,6 +238,7 @@ section.intro-bkg {
   height: 60vh;
   background-position: center; }
 
+/*Mouse Arrow Scroll*/
 img.icon-intro {
   width: 150px;
   margin-bottom: 15px;
@@ -306,6 +311,15 @@ img.organismo {
 .instructor-img {
   box-shadow: -15px -15px 0px 3px #d9d9d9;
   width: 100%; }
+
+span.small-text {
+  font-size: 12px; }
+
+@media (max-width: 767px) {
+  .instructor-row {
+    flex-direction: column-reverse !important; }
+  .instructor-img {
+    margin-top: 50px; } }
 
 /* Background Intro */
 section.organismo-bkg {

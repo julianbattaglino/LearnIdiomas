@@ -6,11 +6,149 @@ section.intro-bkg {
     height: 60vh;
     background-position: center;
 }
+
+/*Mouse Arrow Scroll*/
+// @-webkit-keyframes ani-mouse {
+//     0% {
+//         opacity: 1;
+//         top: 29%;
+//     }
+
+//     15% {
+//         opacity: 1;
+//         top: 50%;
+//     }
+
+//     50% {
+//         opacity: 0;
+//         top: 50%;
+//     }
+
+//     100% {
+//         opacity: 0;
+//         top: 29%;
+//     }
+// }
+
+// @-moz-keyframes ani-mouse {
+//     0% {
+//         opacity: 1;
+//         top: 29%;
+//     }
+
+//     15% {
+//         opacity: 1;
+//         top: 50%;
+//     }
+
+//     50% {
+//         opacity: 0;
+//         top: 50%;
+//     }
+
+//     100% {
+//         opacity: 0;
+//         top: 29%;
+//     }
+// }
+
+// @keyframes ani-mouse {
+//     0% {
+//         opacity: 1;
+//         top: 29%;
+//     }
+
+//     15% {
+//         opacity: 1;
+//         top: 50%;
+//     }
+
+//     50% {
+//         opacity: 0;
+//         top: 50%;
+//     }
+
+//     100% {
+//         opacity: 0;
+//         top: 29%;
+//     }
+// }
+
+// .scroll-btn {
+//     display: block;
+//     position: relative;
+//     left: 0;
+//     right: 0;
+//     text-align: center;
+//     padding: 25px 0 25px 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .scroll-btn>* {
+//     display: inline-block;
+//     line-height: 18px;
+//     font-size: 13px;
+//     font-weight: normal;
+//     color: #7f8c8d;
+//     color: #ffffff;
+//     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//     letter-spacing: 2px;
+// }
+
+// .scroll-btn>*:hover,
+// .scroll-btn>*:focus,
+// .scroll-btn>*.active {
+//     color: #ffffff;
+// }
+
+// .scroll-btn>*:hover,
+// .scroll-btn>*:focus,
+// .scroll-btn>*:active,
+// .scroll-btn>*.active {
+//     opacity: 0.8;
+//     filter: alpha(opacity=80);
+// }
+
+// .scroll-btn .mouse {
+//     position: relative;
+//     display: block;
+//     width: 35px;
+//     height: 55px;
+//     margin: 0 auto 20px;
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+//     border: 3px solid #333;
+//     border-radius: 23px;
+// }
+
+// .scroll-btn .mouse>* {
+//     position: absolute;
+//     display: block;
+//     top: 29%;
+//     left: 50%;
+//     width: 8px;
+//     height: 8px;
+//     margin: -4px 0 0 -4px;
+//     background: #333;
+//     border-radius: 50%;
+//     -webkit-animation: ani-mouse 2s linear infinite;
+//     -moz-animation: ani-mouse 2s linear infinite;
+//     animation: ani-mouse 2s linear infinite;
+// }
+
+// div#intro {
+//     padding-top: 100px !important;
+// }
+
 img.icon-intro {
     width: 150px;
     margin-bottom: 15px;
     transition: .2s ease-in-out transform !important;
 }
+
 img.icon-intro:hover {
     transform: scale(1.1) !important;
 }
@@ -24,6 +162,7 @@ h1.title {
     text-transform: uppercase;
     font-style: italic;
 }
+
 h2.title {
     font-style: italic;
 }
@@ -75,12 +214,13 @@ img.organismo {
     height: auto;
     box-shadow: -15px -15px 0px 3px #d9d9d9;
 }
+
 /* Aditional Info*/
 .aditional-info-title {
-    background-color: rgb(242,242,242);
+    background-color: rgb(242, 242, 242);
 }
 
-@media (max-width: 991.98px){
+@media (max-width: 991.98px) {
     img.icon-intro {
         width: 100px;
     }
