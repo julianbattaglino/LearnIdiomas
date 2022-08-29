@@ -37,6 +37,7 @@
     -webkit-animation-name: slideIn;
     animation-name: slideIn;
 }
+
 /*Sub Menu Animation ends*/
 
 /* Header */
@@ -73,16 +74,18 @@ a.nav-link {
 
 a.nav-link.underline {
     font-weight: 500 !important;
-  }
-  a.nav-link.dropdown-toggle {
+}
+
+a.nav-link.dropdown-toggle {
     font-weight: 500 !important;
-  }
-  a#active.nav-link.underline {
+}
+
+a#active.nav-link.underline {
     font-weight: 900 !important;
     color: #333 !important;
     text-decoration: underline !important;
-  }
-  
+}
+
 
 .dropdown-item {
     padding: 5px 5px !important;
@@ -134,4 +137,39 @@ a.nav-link.underline {
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
     transform: translate(15%, 10%) rotate(-45deg);
+}
+
+@media (max-width: 991px) {
+    .logo {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .dropdown-menu {
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+    .dropdown-item {
+        border-bottom: solid !important;
+        border-width: 1px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    nav.navbar {
+        background: #FFFFFF;
+        box-shadow: 2px -1px 10px rgba(0, 0, 0, 0.25);
+        padding: 15px 100px
+    }
+
+    .dropdown-item {
+        padding: 5px 25px !important;
+        border: none !important;
+    }
+
 }

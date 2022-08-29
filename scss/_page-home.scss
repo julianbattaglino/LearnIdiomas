@@ -220,8 +220,74 @@ img.organismo {
     background-color: rgb(242, 242, 242);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
+
+    /* Background Intro */
+    section.intro-bkg {
+        height: 25vh;
+    }
+
+    /* El Instructor */
+    img.syl-img {
+        margin-top: 40px;
+        box-shadow: 10px 10px 0px 0px #d9d9d9;
+    }
+
+    .instructor-row {
+        flex-direction: column-reverse !important;
+    }
+
+    /* El Organismo */
+    img.organismo {
+        margin-top: 50px;
+        box-shadow: -10px -10px 0px 0px #d9d9d9;
+    }
+
+    .organismo-row {
+        flex-direction: column-reverse;
+    }
+
+    /* Section Contacto */
+    div.col-12.col-md-7.col-form {
+        padding-top: 50px !important;
+    }
+
+    /* Section Aditional Info */
+    h2.title {
+        font-size: 22px;
+        font-style: italic;
+    }
+}
+
+@media (max-width: 991px) {
     img.icon-intro {
         width: 100px;
+    }
+    /* Intro */
+    h1.title {
+        font-size: 20px;
+    }
+    h2.subtitle {
+        font-size: 18px;
+    }
+    p.intro {
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+    /* Certifications */
+    img.cards {
+        margin: auto;
+    }
+    .section-container {
+        padding: 75px 25px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    /* Background Intro */
+    section.intro-bkg {
+        height: 40vh;
     }
 }

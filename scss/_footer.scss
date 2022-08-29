@@ -35,6 +35,7 @@ button.form-btn {
 footer {
     border-top: solid 1px $text-black;
 }
+
 .footer-container {
     padding: 50px 100px;
 }
@@ -91,13 +92,15 @@ i.youtube:hover {
 h2.social {
     margin-top: 50px;
 }
+
 .copyright-container {
     padding: 25px 100px;
     display: flex;
 }
+
 h3.copyright {
     font-family: 'Lato', sans-serif;
-    font-size: 16px;        
+    font-size: 16px;
     font-weight: 500 !important;
     color: $text-black;
     margin-block-start: 0 !important;
@@ -105,7 +108,31 @@ h3.copyright {
     display: flex;
     align-items: center;
 }
+
 img.copyright-logo {
     width: 25px;
     height: 25px;
+}
+
+@media (max-width: 768px) {
+    .google-map {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Footer */
+    .footer-col {
+        padding-right: 0;
+        margin-top: 50px !important;
+    }
+    .footer-container {
+        padding: 25px 25px;
+    }
+    .copyright-container {
+        padding: 25px 25px;
+    }
+
 }
