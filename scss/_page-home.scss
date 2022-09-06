@@ -194,7 +194,7 @@ p.intro {
 img.cards {
     width: 250px;
     height: 130px;
-    border: solid 3px #ebebeb;
+    object-fit: contain;
 }
 
 /* El Instructor */

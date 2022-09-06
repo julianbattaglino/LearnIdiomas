@@ -44,7 +44,10 @@
 nav.navbar {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 4;
+    background: #FFFFFF !important;
+    box-shadow: 2px -1px 10px rgba(0, 0, 0, 0.25);
+
 }
 
 ul.navbar-nav {
@@ -162,7 +165,7 @@ a#active.nav-link.underline {
     }
 
     nav.navbar {
-        background: #FFFFFF;
+        background: #FFFFFF !important;
         box-shadow: 2px -1px 10px rgba(0, 0, 0, 0.25);
         padding: 15px 100px
     }

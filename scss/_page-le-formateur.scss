@@ -9,7 +9,9 @@ span.flags {
 }
 
 span.small-text {
-    font-size: 12px;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .section-experience {
@@ -56,6 +58,10 @@ span.lb-number {
     color: #000000 !important;
 }
 
+.icon-formateur {
+    width: 100px;
+}
+
 @media (max-width: 767px) {
     .instructor-row {
         flex-direction: column-reverse !important;
@@ -68,6 +74,10 @@ span.lb-number {
     .slider-item img {
         max-width: 100%;
     }
+    .icon-formateur {
+        width: 75px;
+    }
+    
 }
 
 @media (max-width: 991px) {

@@ -1,11 +1,30 @@
 /* Global Styles */
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 35, 121, 0.3);
+  border-radius: 5px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 35, 121, 0.3); }
+
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important; }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 25px; }
+  scroll-padding-top: 75px; }
 
 main {
   padding-top: 75px; }
@@ -30,6 +49,14 @@ a {
 li {
   list-style-type: none; }
 
+span.underline-nice {
+  background-image: linear-gradient(120deg, rgba(0, 35, 121, 0.1) 0%, rgba(0, 35, 121, 0.1) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease-in;
+  width: fit-content; }
+
 /* Show More Button */
 .btn-base {
   height: 56px;
@@ -49,11 +76,10 @@ li {
     border-radius: 9999px;
     width: 56px;
     height: 56px;
-    background: #cde8f4;
+    background: rgba(0, 35, 121, 0.1);
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid #cde8f4;
     transition: width 0.3s ease-in-out;
     z-index: -2; }
   .btn-base::after {
@@ -61,12 +87,11 @@ li {
     border-radius: 9999px;
     width: 56px;
     height: 56px;
-    background: #cde8f4;
+    background: rgba(0, 35, 121, 0.1) !important;
     position: absolute;
     top: 0;
     left: 0;
     transform: translateX(-56px);
-    border: 1px solid #cde8f4;
     transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
     z-index: -1; }
   .btn-base:hover {
@@ -119,7 +144,10 @@ li {
 @media (max-width: 991px) {
   .container-fluid {
     padding-right: 25px !important;
-    padding-left: 25px !important; } }
+    padding-left: 25px !important; }
+  .btn-base {
+    font-size: 12px !important;
+    align-items: center; } }
 
 /* Dropdown menu transparent background */
 .dropdown-item:focus {
@@ -164,7 +192,9 @@ li {
 nav.navbar {
   position: fixed;
   width: 100%;
-  z-index: 1; }
+  z-index: 4;
+  background: #FFFFFF !important;
+  box-shadow: 2px -1px 10px rgba(0, 0, 0, 0.25); }
 
 ul.navbar-nav {
   font-family: 'Lato', sans-serif;
@@ -254,7 +284,7 @@ a#active.nav-link.underline {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end; }
   nav.navbar {
-    background: #FFFFFF;
+    background: #FFFFFF !important;
     box-shadow: 2px -1px 10px rgba(0, 0, 0, 0.25);
     padding: 15px 100px; }
   .dropdown-item {
@@ -313,7 +343,7 @@ p.intro {
 img.cards {
   width: 250px;
   height: 130px;
-  border: solid 3px #ebebeb; }
+  object-fit: contain; }
 
 /* El Instructor */
 .section-container {
@@ -390,7 +420,9 @@ span.flags {
   margin-right: 20px; }
 
 span.small-text {
-  font-size: 12px; }
+  font-size: 10px;
+  font-style: italic;
+  font-weight: bold; }
 
 .section-experience {
   background-color: #f2f2f2; }
@@ -426,13 +458,18 @@ span.lb-number {
 .slick-next:before {
   color: #000000 !important; }
 
+.icon-formateur {
+  width: 100px; }
+
 @media (max-width: 767px) {
   .instructor-row {
     flex-direction: column-reverse !important; }
   .instructor-img {
     margin-top: 50px; }
   .slider-item img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .icon-formateur {
+    width: 75px; } }
 
 @media (max-width: 991px) {
   /* Page El Instructor */
@@ -504,6 +541,31 @@ p.organisme-text {
     background-attachment: unset; }
   h2.title-organisme {
     font-size: 36px; } }
+
+.title-formations {
+  margin-bottom: 0 !important; }
+
+.title-container {
+  padding: 75px 0; }
+
+.small-icon {
+  width: 75px !important;
+  margin-left: 25px;
+  transform: rotate(10deg) !important; }
+
+.padding-top {
+  padding-top: 0 !important; }
+
+.card-particuliers {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4) !important; }
+
+.cpf-cards {
+  background-color: #ffffff !important; }
+
+@media (max-width: 768px) {
+  /* Show More Button */
+  .small-icon {
+    width: 50px !important; } }
 
 /* Section Contacto */
 h2.subtitle-contact {

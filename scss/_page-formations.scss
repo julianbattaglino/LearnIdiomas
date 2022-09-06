@@ -1,0 +1,33 @@
+.title-formations {
+    margin-bottom: 0 !important;
+}
+
+.title-container {
+    padding: 75px 0;
+}
+
+.small-icon {
+    width: 75px !important;
+    margin-left: 25px;
+    transform: rotate(10deg) !important;
+}
+
+.padding-top {
+    padding-top: 0 !important;
+}
+
+.card-particuliers {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4) !important;
+}
+
+.cpf-cards {
+    background-color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+
+    /* Show More Button */
+    .small-icon {
+        width: 50px !important;
+    }
+}
