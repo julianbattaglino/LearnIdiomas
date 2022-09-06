@@ -31,7 +31,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+  scroll-padding-top: 85px;
 }
 
 main {
@@ -184,7 +184,7 @@ li {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) {  
   .container-fluid {
     padding-right: 25px !important;
     padding-left: 25px !important;
