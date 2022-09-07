@@ -2,7 +2,7 @@
 $('.slick-slider').slick({
   dots: true,
   speed: 300,
-  slidesToShow: 3,
+  slidesToShow: 4,
   centerMode: false,
   focusOnSelect: true,
   adaptiveHeight: true,
