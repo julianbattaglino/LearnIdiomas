@@ -20,13 +20,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Slick css-->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <!-- lightbox2 css-->
+    <link rel="stylesheet" href="./assets/css/lightbox.css">
+
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Aos css -->
     <link href="./assets/css/aos.css" rel="stylesheet">
-    <!-- Google Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
@@ -79,64 +83,76 @@
     <nav class="sticky-top bg-light secondary-nav">
         <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link"  href="#particuliers">Particuliers</a>
+                <a class="nav-link" href="#particuliers">Particuliers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#professionnels">Professionnels</a>
+                <a class="nav-link" href="#cpf">CPF</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cpf">CPF</a>
+                <a class="nav-link" href="#professionnels">Professionnels</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#linguaskill">Linguaskill by Cambridge</a>
             </li>
-  
-          </ul>      
-        </nav>
+
+        </ul>
+    </nav>
 
 
     <!-- Section Particuliers Cards -->
-    <div class="formation-title-container">
+    <!-- <div class="formation-title-container">
         <h1 class="h1-formations text-capitalize text-center fw-bold" data-aos-duration="500" data-aos="fade-up"><span
                 class="underline-nice">Formations et tarifs</span></h1><br>
-            </div>
+    </div> -->
 
 
 
 
-        <!-- Particuliers -->
-        <div id="particuliers" class="formation-section" data-aos-duration="500" data-aos="fade-up">
-            <div class="intro-container">
-                <img data-aos="fade-up" class="small-icon" src="./assets/images/icons/particuliers-5.png" alt="">
-                <h2 class="h2-formations text-capitalize fw-bold" data-aos-duration="500" data-aos="fade-up"><span
-                        class="underline-nice">Formation pour les particuliers</span></h2><br>
-            </div>
+    <!-- Particuliers -->
+    <div id="particuliers" class="formation-section" data-aos-duration="500" data-aos="fade-up">
+        <div class="intro-container">
+            <img data-aos="fade-up" class="small-icon" src="./assets/images/icons/particuliers-5.png" alt="">
+            <h2 class="h2-formations text-capitalize fw-bold pb-5" data-aos-duration="500" data-aos="fade-up"><span
+                    class="underline-nice">Particuliers</span></h2><br>
+        </div>
 
-            <h2 class="h2-formations text-capitalize fw-bold" data-aos-duration="500" data-aos="fade-up"><span
-                    class="underline-nice">Le forfait classique :</span></h2><br>
-
-            <div class="card-body">
-                <p class="organisme-text aos-init aos-animate" data-aos-duration="700" data-aos="fade-up">6 séances
-                    d’1h30, soit 9 heures de cours. En individuel. <b>270€</b></p>
-                <p class="organisme-text aos-init aos-animate" data-aos-duration="700" data-aos="fade-up">Tarif horaire
-                    : <b>30€.</b></p>
-                <p class="organisme-text aos-init aos-animate" data-aos-duration="700" data-aos="fade-up">Tarif séance :
-                    <b>45€.</b>
-                </p><br><br>
-                <p><i class="fa-solid fa-check"></i>Il vous permet de choisir votre rythme d’apprentissage.</p>
-                <p><i class="fa-solid fa-check"></i>Vous bénéficiez de cours personnalisés, en individuel.</p>
-                <p><i class="fa-solid fa-check"></i>Vous ne vous engagez que pour six séances.</p>
-                <p><i class="fa-solid fa-check"></i>Vous pouvez le renouveler librement, autant de fois que souhaité.
-                </p>
-
-            </div>
+            <a data-aos-duration="900" data-aos="fade-up" href="./assets/images/tarifs/tarifs-particuliers.pdf" target="_blank"
+                class="btn-base me-5 mb-5">Voir Tarifs formation Particuliers
+                <span class="btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </span>
+            </a>
 
 
-    <!-- Section Les tarifs réduits Cards -->
-        <div class="intro-container d-flex align-items-center">
+        <h2 class="h2-formations text-capitalize fw-bold" data-aos-duration="500" data-aos="fade-up"><span
+                class="underline-nice">Le forfait classique :</span></h2><br>
+
+        <div class="card-body">
+            <p class="organisme-text aos-init aos-animate" data-aos-duration="700" data-aos="fade-up">6 séances
+                d’1h30, soit 9 heures de cours. En individuel. <b>270€</b></p>
+            <p class="organisme-text aos-init aos-animate" data-aos-duration="700" data-aos="fade-up">Tarif horaire
+                : <b>30€.</b></p>
+            <p class="organisme-text aos-init aos-animate" data-aos-duration="700" data-aos="fade-up">Tarif séance :
+                <b>45€.</b>
+            </p><br><br>
+            <p><i class="fa-solid fa-check"></i>Il vous permet de choisir votre rythme d’apprentissage.</p>
+            <p><i class="fa-solid fa-check"></i>Vous bénéficiez de cours personnalisés, en individuel.</p>
+            <p><i class="fa-solid fa-check"></i>Vous ne vous engagez que pour six séances.</p>
+            <p><i class="fa-solid fa-check"></i>Vous pouvez le renouveler librement, autant de fois que souhaité.
+            </p>
+
+        </div>
+
+
+        <!-- Section Les tarifs réduits Cards -->
+        <div class="d-flex align-items-center">
             <h2 class="h2-formations text-capitalize fw-bold" data-aos-duration="500" data-aos="fade-up"><span
                     class="underline-nice">Les tarifs réduits</span></h2><br>
-                </div>
+        </div>
 
 
 
@@ -239,9 +255,100 @@
                 alt="">
         </div>
 
-        <div class="d-flex justify-content-center">
-            <a data-aos-duration="900" data-aos="fade-up" href="https://www.moncompteformation.gouv.fr/espace-prive/html/#/formation/recherche/results?q=%7B%22ou%22:%7B%22modality%22:%22EN_CENTRE_MIXTE%22,%22type%22:%22CP%22,%22ville%22:%7B%22nom%22:%22HYERES%22,%22codePostal%22:%2283400%22,%22codeInsee%22:%2283069%22,%22coordonnee%22:%7B%22longitude%22:6.1892576,%22latitude%22:43.10185%7D,%22eligibleCpf%22:true%7D%7D,%22sort%22:%22SCORE%22,%22debutPagination%22:1,%22nombreOccurences%22:6,%22quoiReferentiel%22:%7B%22code%22:%2215234%22,%22libelle%22:%22ANGLAIS%22,%22publics%22:%5B%22GD_PUBLIC%22%5D,%22type%22:%22FORMACODE%22%7D,%22quoi%22:null,%22contexteFormation%22:%22ACTIVITE_PROFESSIONNELLE%22,%22distance%22:500,%22conformiteReglementaire%22:null,%22durationHours%22:null,%22endDate%22:null,%22evaluation%22:null,%22niveauSortie%22:null,%22nomOrganisme%22:%22GUALANDI%20Sylvain%22,%22prix%22:null,%22rythme%22:null,%22startDate%22:null%7D " target="_blank"
-                class="btn-base me-5 mb-5">Voir les formations Learn idiomas sur le site du gouvernement - www.moncompteformation.gouv.fr
+        <div class="btn-container">
+            <a data-aos-duration="900" data-aos="fade-up"
+                href="https://www.moncompteformation.gouv.fr/espace-prive/html/#/formation/recherche/results?q=%7B%22ou%22:%7B%22modality%22:%22EN_CENTRE_MIXTE%22,%22type%22:%22CP%22,%22ville%22:%7B%22nom%22:%22HYERES%22,%22codePostal%22:%2283400%22,%22codeInsee%22:%2283069%22,%22coordonnee%22:%7B%22longitude%22:6.1892576,%22latitude%22:43.10185%7D,%22eligibleCpf%22:true%7D%7D,%22sort%22:%22SCORE%22,%22debutPagination%22:1,%22nombreOccurences%22:6,%22quoiReferentiel%22:%7B%22code%22:%2215234%22,%22libelle%22:%22ANGLAIS%22,%22publics%22:%5B%22GD_PUBLIC%22%5D,%22type%22:%22FORMACODE%22%7D,%22quoi%22:null,%22contexteFormation%22:%22ACTIVITE_PROFESSIONNELLE%22,%22distance%22:500,%22conformiteReglementaire%22:null,%22durationHours%22:null,%22endDate%22:null,%22evaluation%22:null,%22niveauSortie%22:null,%22nomOrganisme%22:%22GUALANDI%20Sylvain%22,%22prix%22:null,%22rythme%22:null,%22startDate%22:null%7D "
+                target="_blank" class="btn-base me-5 mb-5">Voir les formations Learn idiomas sur le site du gouvernement
+                - www.moncompteformation.gouv.fr
+                <span class="btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </span>
+            </a>
+
+            <a data-aos-duration="900" data-aos="fade-up" href="./assets/images/tarifs/tarifs-cpf.pdf" target="_blank"
+                class="btn-base me-5 mb-5">Voir Tarifs formation CPF
+                <span class="btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </span>
+            </a>
+
+            <a data-aos-duration="900" data-aos="fade-up"
+                href="./assets/images/programme/Programme de formation A2 - Learn idiomas.pdf" target="_blank"
+                class="btn-base me-5 mb-5">Programme de
+                formation A2
+                <span class="btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </span>
+            </a>
+
+            <a data-aos-duration="900" data-aos="fade-up"
+                href="./assets/images/programme/Programme de formation B1 - Learn idiomas.pdf" target="_blank"
+                class="btn-base me-5 mb-5">Programme de
+                formation B1
+                <span class="btn-icon ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </span>
+            </a>
+
+            <a data-aos-duration="900" data-aos="fade-up"
+                href="./assets/images/programme/Programme de formation B2 - Learn idiomas.pdf" target="_blank"
+                class="btn-base me-5 mb-5">Programme de
+                formation B2
+                <span class="btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Section Profesionals -->
+    <div id="professionnels" class="formation-section">
+        <div class="intro-container">
+            <img data-aos="fade-up" class="small-icon" src="./assets/images/icons/proffessionels.png" alt="">
+            <h2 class="h2-formations text-capitalize fw-bold" data-aos-duration="500" data-aos="fade-up"><span
+                    class="underline-nice">Proffessionels</span></h2><br>
+        </div>
+        <h3 data-aos="fade-up" class="formations-subtitle"><span class="underline-nice">Quelles différences par rapport
+                aux particuliers ?</span></h3>
+        <p class="languaje-text" data-aos-duration="700" data-aos="fade-up">• Vous ne financez pas personnellement votre
+            formation, elle est prise en charge par votre entreprise ou par un fond de formation.</p>
+        <p>• Il ne s’agit pas d’une simple prestation de service, mais d’une formation professionnelle. Elle est donc
+            règlementée, encadrée et contrôlée.</p>
+        <p>• Il n’y a pas de grosses différences sur le fond pour les bénéficiaires, mais ça implique des contraintes
+            pour l’organisme, ainsi qu’une lourdeur administrative, d’où découle une inévitable différence tarifaire.
+        </p>
+        <p class="languaje-text" data-aos-duration="700" data-aos="fade-up"><b>Un panel de 8 formations professionnelles
+                (hors CPF) est proposé par Learn idiomas :</b></p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• De 21h à 81h de formation, s’étalant sur
+            3 à 7 mois maximum.</p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• De 900€ à 3000€ pour de l’individuel,
+            avec un tarif horaire à partir de 37€.</p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Accessible à tous niveaux (sauf C2).</p>
+
+        <div class="btn-container">
+            <a data-aos-duration="900" data-aos="fade-up" href="./assets/images/tarifs/tarifs-formation-professionnelle-hors-cpf.pdf" target="_blank"
+                class="btn-base me-5 mb-5">Voir Tarifs formation professionnelle
                 <span class="btn-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -252,60 +359,93 @@
             </a>
         </div>
 
-        <a data-aos-duration="900" data-aos="fade-up" href="./assets/images/Tarifs.pdf" target="_blank"
-            class="btn-base me-5 mb-5">Voir les tarifs
-            <span class="btn-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </span>
-        </a>
 
-        <a data-aos-duration="900" data-aos="fade-up" href="" target="_blank" class="btn-base me-5 mb-5">programme de
-            formation A2
-            <span class="btn-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </span>
-        </a>
 
-        <a data-aos-duration="900" data-aos="fade-up" href="" target="_blank" class="btn-base me-5 mb-5">programme de
-            formation B1
-            <span class="btn-icon ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </span>
-        </a>
 
-        <a data-aos-duration="900" data-aos="fade-up" href="" target="_blank" class="btn-base me-5 mb-5">programme de
-            formation B2
-            <span class="btn-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-            </span>
-        </a>
-
-    </div>
-
-    <!-- Section Profesionals -->
-    <div class="formation-section">
-        <div class="intro-container">
-            <img data-aos="fade-up" class="small-icon" src="./assets/images/icons/proffessionels.png" alt="">
-            <h2 class="h2-formations text-capitalize fw-bold" data-aos-duration="500" data-aos="fade-up"><span
-                    class="underline-nice">Proffessionels</span></h2><br>
+        <!-- Slick Sliders Tarifs -->
+        <div class="slick-slider">
+            <div class="slider-item"><a class="lightbox-link"
+                    href="./assets/images/tarifs/tarifs-formation-professionnelle-hors-cpf-1.jpg"
+                    data-lightbox="Certifications"
+                    data-title="Tarifs Formation Professionnelle Hors CPF 1 - Page un"><img
+                        src="./assets/images/tarifs/tarifs-formation-professionnelle-hors-cpf-1.jpg"
+                        alt="Tarifs Formation Professionnelle Hors CPF 1"></a></div>
+            <div class="slider-item"><a class="lightbox-link"
+                    href="./assets/images/tarifs/tarifs-formation-professionnelle-hors-cpf-2.jpg"
+                    data-lightbox="Certifications"
+                    data-title="Tarifs Formation Professionnelle Hors CPF 1 - Page deux"><img
+                        src="./assets/images/tarifs/tarifs-formation-professionnelle-hors-cpf-2.jpg"
+                        alt="Tarifs Formation Professionnelle Hors CPF 2"></a></div>
         </div>
+
+
     </div>
+
+    <!-- Section Linguaskill by Cambridge -->
+    <div id="linguaskill" class="formation-section">
+        <div class="intro-container">
+            <img data-aos="fade-up" class="small-icon cambridge-logo" src="./assets/images/icons/logo-linguaskill.webp"
+                alt="">
+            <h2 class="h2-formations text-capitalize fw-bold" data-aos-duration="500" data-aos="fade-up"><span
+                    class="underline-nice">Linguaskill by Cambridge</span></h2><br>
+        </div>
+        <p class="languaje-text" data-aos-duration="700" data-aos="fade-up">L’organisme est habilité centre de
+            passation
+            pour la certification Linguaskill, de Cambridge. NB : Il ne s’agit pas d’une formation, mais bien d’une
+            certification. 2h à 2h30 de test pour évaluer et certifier avec précision l’ensemble de vos compétences
+            en
+            anglais : compréhension et expression, à la fois orale et écrite.</p>
+        <h3 data-aos="fade-up" class="formations-subtitle"><span class="underline-nice">Double avantage chez Learn
+                idiomas :</span></h3>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Passez la certification à la date de
+            votre choix, à 1 jour près !</p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Bénéficiez d’un tarif attractif : la
+            certification complète 4 skills (tous modules) à 140€.</p>
+
+        <h3 data-aos="fade-up" class="formations-subtitle"><span class="underline-nice">Bon à savoir :</span></h3>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Pas de réservation sans règlement :
+            la
+            réservation n’est possible que lorsque le paiement est reçu par l’organisme.</p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• La réservation doit être effective au
+            moins 8 jours avant la date de la certification.</p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Une réservation de dernière minute
+            est
+            possible pour 30€ supplémentaires, jusqu’à 2 jours et demi à l’avance. Par exemple, réservez mercredi
+            midi
+            pour passer la certification vendredi soir.</p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Résultats disponibles en 48h.</p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Certification valable 2 ans.</p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Tous niveaux (sauf C2).</p>
+
+        <h3 data-aos="fade-up" class="formations-subtitle"><span class="underline-nice">Annulation/modification
+                :</span>
+        </h3>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Pour toute annulation, vous ne pouvez
+            prétendre qu’à un remboursement partiel : 100€ (71%) en cas d’annulation anticipée d’au moins 3 jours,
+            et
+            70€ (50%) au-delà.</p>
+        <p class="organisme-text" data-aos-duration="700" data-aos="fade-up">• Pour toute modification de date de
+            passage, des frais supplémentaires s’appliquent : 20€ en cas de modification anticipée d’au moins 3
+            jours,
+            et 60€ au-delà.</p>
+        <h3 data-aos="fade-up" class="formations-subtitle"><span class="underline-nice">Plus d’infos sur la
+                certification, son fonctionnement et son contenu :</span></h3>
+        <div class="btn-container">
+            <a data-aos-duration="900" data-aos="fade-up"
+                href="https://www.cambridgeenglish.org/fr/exams-and-tests/linguaskill/ " target="_blank"
+                class="btn-base me-5">https://www.cambridgeenglish.org/fr/exams-and-tests/linguaskill/
+                <span class="btn-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </span>
+            </a>
+        </div>
+
+    </div>
+
 
 
 
