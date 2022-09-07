@@ -1,3 +1,6 @@
+// Aos Init //
+AOS.init();
+
 // slick Init //
 $('.slick-slider').slick({
   dots: true,
@@ -28,9 +31,6 @@ $('.slick-slider').slick({
   ]
 
 });
-
-// Aos Init //
-AOS.init();
 
 /* Recaptcha */
 function recaptchaCallback() {
