@@ -24,7 +24,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; }
+  scroll-padding-top: 125px; }
 
 main {
   padding-top: 75px; }
@@ -280,7 +280,9 @@ a#active.nav-link.underline {
     background-color: transparent !important; }
   .dropdown-item {
     border-bottom: solid !important;
-    border-width: 1px !important; } }
+    border-width: 1px !important; }
+  a.nav-link {
+    font-size: 16px !important; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -559,13 +561,14 @@ p.organisme-text {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 25px 0;
   z-index: 5 !important; }
 
-.nav-link {
+.secondary-nav-item {
   font-family: 'Lato', sans-serif !important;
   color: #333 !important;
-  font-weight: 500 !important; }
+  font-weight: 500 !important;
+  padding: 25px !important; }
 
 .formation-title-container {
   padding: 75px 0 75px 0; }
@@ -599,7 +602,7 @@ h3.formations-subtitle {
   padding: 25px 0; }
 
 .small-icon {
-  width: 75px !important;
+  width: 60px !important;
   margin-bottom: 15px;
   transform: rotate(10deg) !important; }
 
@@ -614,7 +617,7 @@ h3.formations-subtitle {
 
 .cambridge-logo {
   width: 150px !important;
-  transform: none !important; }
+  margin-bottom: 20px; }
 
 .btn-container {
   margin: 50px 0; }
@@ -625,7 +628,7 @@ h3.formations-subtitle {
     width: 50px !important; } }
 
 @media (max-width: 991px) {
-  .nav-link {
+  .secondary-nav-item {
     font-family: 'Lato', sans-serif !important;
     padding: 5px !important;
     font-size: 12px !important;

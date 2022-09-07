@@ -157,6 +157,10 @@ a#active.nav-link.underline {
         border-bottom: solid !important;
         border-width: 1px !important;
     }
+    a.nav-link {
+        font-size: 16px !important;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -173,6 +177,6 @@ a#active.nav-link.underline {
     .dropdown-item {
         padding: 5px 25px !important;
         border: none !important;
-    }
+    }    
 
 }
