@@ -327,8 +327,7 @@ h2.title {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  color: #858585;
-  text-transform: uppercase; }
+  color: #858585; }
 
 p.intro {
   font-family: 'Lato', sans-serif;
@@ -596,6 +595,7 @@ h3.formations-subtitle {
   font-size: 24px;
   margin-bottom: 0 !important;
   margin-top: 50px;
+  margin-bottom: 20px !important;
   font-weight: 700; }
 
 .title-container {
@@ -614,6 +614,9 @@ h3.formations-subtitle {
 
 .cpf-cards {
   background-color: #ffffff !important; }
+
+.cards {
+  margin-top: 50px !important; }
 
 .cambridge-logo {
   width: 150px !important;
