@@ -1,13 +1,17 @@
-// Aos Init //
-AOS.init();
+$(window).on('load', function () {
+  AOS.refresh();
+});
 
 $(document).ready(function () {
-  // Navbar Collapse on Scroll (Script)
+  //AOS.init
+  AOS.init();
+
+  // Navbar Collapse on click dropdown submenu links (Script)
   $('ul.dropdown-menu.li.a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
   });
 
-  // Navbar Collapse on Scroll (Script)
+  // Navbar Collapse on on click contact anchor link  (Script)
   $('a.nav-link.underline.contact-toggle').on('click', function () {
     $('.navbar-collapse').collapse('hide');
   });
