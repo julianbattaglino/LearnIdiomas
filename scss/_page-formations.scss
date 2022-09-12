@@ -53,7 +53,7 @@ h3.formations-subtitle {
 .small-icon {
     width: 60px !important;
     margin-bottom: 15px;    
-    transform: rotate(10deg) !important;
+    //transform: rotate(10deg) !important;
 }
 
 .padding-top {
@@ -66,9 +66,6 @@ h3.formations-subtitle {
 
 .cpf-cards {
     background-color: #ffffff !important;
-}
-.cards {
-    margin-top: 50px !important;
 }
 .cambridge-logo {
     width: 150px !important;
@@ -84,6 +81,9 @@ h3.formations-subtitle {
     /* Show More Button */
     .small-icon {
         width: 50px !important;
+    }
+    .cards {
+        margin-top: 50px !important;
     }
 }
 
