@@ -46,6 +46,7 @@ $(document).ready(function () {
     ]
 
   });
+});
 
   /* Recaptcha */
   function recaptchaCallback() {
@@ -68,7 +69,7 @@ $(document).ready(function () {
   }
 
 
-});
+
 
 
 
