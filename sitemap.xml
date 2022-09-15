@@ -1,35 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.learn-idiomas.com/</loc>
-<lastmod>2022-09-06</lastmod>
+<lastmod>2022-09-12</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
 <loc>https://www.learn-idiomas.com/le-formateur.html</loc>
-<lastmod>2022-09-06</lastmod>
+<lastmod>2022-09-12</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
 <loc>https://www.learn-idiomas.com/le-organisme.html</loc>
-<lastmod>2022-09-06</lastmod>
+<lastmod>2022-09-12</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
 <loc>https://www.learn-idiomas.com/formations.html</loc>
-<lastmod>2022-09-06</lastmod>
+<lastmod>2022-09-12</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.learn-idiomas.com/formations.html#particuliers</loc>
-<lastmod>2022-09-06</lastmod>
-</url>
-<url>
-<loc>https://www.learn-idiomas.com/formations.html#professionnels</loc>
-<lastmod>2022-09-06</lastmod>
-</url>
-<url>
-<loc>https://www.learn-idiomas.com/formations.html#cpf</loc>
-<lastmod>2022-09-06</lastmod>
-</url>
-<url>
-<loc>https://www.learn-idiomas.com/formations.html#linguaskill</loc>
-<lastmod>2022-09-06</lastmod>
+<loc>https://www.learn-idiomas.com/cgv-et-mentions-legales.html</loc>
+<lastmod>2022-09-12</lastmod>
+<priority>0.80</priority>
 </url>
 </urlset>
