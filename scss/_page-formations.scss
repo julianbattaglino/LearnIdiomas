@@ -71,6 +71,11 @@ h3.formations-subtitle {
     width: 150px !important;
     margin-bottom: 20px;
 }
+img.example-test {
+    max-width: 50%;
+    margin: auto;
+    display: block;
+}
 
 .btn-container {
     margin: 50px 0;
@@ -84,6 +89,9 @@ h3.formations-subtitle {
     }
     .cards {
         margin-top: 50px !important;
+    }
+    img.example-test {
+        max-width: 100%;
     }
 }
 
