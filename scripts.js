@@ -68,9 +68,8 @@ $(document).ready(function () {
     grecaptcha.reset();
   }
 
-
-
-
-
-
-
+  /* Lightbox2 js config options */
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
