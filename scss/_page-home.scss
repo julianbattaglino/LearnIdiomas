@@ -7,6 +7,12 @@ section.intro-bkg {
     background-position: center;
 }
 
+.intro-container {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    text-align: center;
+}
+
 /*Mouse Arrow Scroll*/
 // @-webkit-keyframes ani-mouse {
 //     0% {
@@ -220,6 +226,13 @@ img.organismo {
     background-color: rgb(242, 242, 242);
 }
 
+/* Google Reviews */
+.google {
+    width: 150px !important;
+    margin: auto !important;
+    display: block !important;
+}
+
 @media (max-width: 768px) {
 
     /* Background Intro */
@@ -268,7 +281,7 @@ img.organismo {
 
     /* Intro */
     h1.title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     h2.subtitle {
@@ -276,7 +289,7 @@ img.organismo {
     }
 
     p.intro {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     p {
@@ -289,7 +302,7 @@ img.organismo {
     }
 
     .section-container {
-        padding: 75px 25px;
+        padding: 75px 15px;
     }
 }
 

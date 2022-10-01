@@ -7,11 +7,14 @@
 span.flags {
     margin-right: 20px;
 }
+img.icon-earth {
+    width: 75px !important;
+}
 
 span.small-text {
-    font-size: 10px;
+    font-size: 12px;
     font-style: italic;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .section-experience {
@@ -66,16 +69,19 @@ span.lb-number {
 .icon-formateur {
     width: 100px;
 }
+.column-flags {
+    padding-left: 25px !important;
+}
+
 
 @media (max-width: 767px) {
     .instructor-row {
-        flex-direction: column-reverse !important;
+        flex-direction: row-reverse !important;
     }
-
-    .instructor-img {
-        margin-top: 50px;
+    .column-flags {
+        padding-top: 30px;
+        padding-left: 0 !important;
     }
-
     .slider-item img {
         max-width: 100%;
     }

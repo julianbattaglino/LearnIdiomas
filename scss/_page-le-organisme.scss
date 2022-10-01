@@ -1,11 +1,10 @@
 /* Background Intro */
 section.organismo-bkg {
-    background-image: url(./assets/images/Photo_classe_1.webp);
+    background-image: url(./assets/images/couverture-organisme.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 85vh;
     background-position: center;
-    background-attachment: fixed;
 }
 
 .title-organisme {
@@ -40,10 +39,13 @@ p.organisme-text {
 .card-body {
     margin-bottom: 75px;
 }
+img.qualiopi-organisme {
+    max-width: 400px;
+}
 
 @media (max-width: 767px) {
     section.organismo-bkg {
-        background-image: url(./assets/images/Photo_classe_1.jpg);
+        background-image: url(./assets/images/couverture-organisme.webp);
         background-size: cover;
         height: 35vh;
         background-attachment: unset;
@@ -70,6 +72,11 @@ p.organisme-text {
         width: 50px;
         margin-bottom: 15px;
     }
+    img.qualiopi-organisme {
+        max-width: 300px;
+        margin: auto !important;
+        display: block;
+    }    
 }
 
 @media (min-width: 767px) and (max-width: 1200px) {
