@@ -195,6 +195,7 @@ p.intro {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     background-color: #F2F2F2;
+    justify-items: center;
 }
 
 img.cards {

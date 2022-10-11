@@ -373,7 +373,8 @@ p.intro {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
-  background-color: #F2F2F2; }
+  background-color: #F2F2F2;
+  justify-items: center; }
 
 img.cards {
   width: 250px;
@@ -679,6 +680,9 @@ img.example-test {
 
 .btn-container {
   margin: 50px 0; }
+
+.img-tarifs {
+  max-width: 100% !important; }
 
 @media (max-width: 768px) {
   /* Show More Button */
