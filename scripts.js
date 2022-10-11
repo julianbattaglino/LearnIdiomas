@@ -20,8 +20,8 @@ $(document).ready(function () {
   $('.slick-slider').slick({
     dots: true,
     speed: 300,
-    slidesToShow: 4,
-    centerMode: false,
+    slidesToShow: 3,
+    centerMode: true,
     focusOnSelect: true,
     adaptiveHeight: true,
     zIndex: 999999,
@@ -29,7 +29,7 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           infinite: true,
           dots: true
         }
@@ -38,6 +38,8 @@ $(document).ready(function () {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
+          centerMode: false,
+
         }
       },
       // You can unslick at a given breakpoint now by adding:
